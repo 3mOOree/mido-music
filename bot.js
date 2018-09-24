@@ -333,31 +333,11 @@ client.on('message', message => {
 
 
 
- 
-client.on('message', msg => {
-
-    if (msg.content == '1join') {
-        if (msg.member.voiceChannel) {
-
-     if (msg.member.voiceChannel.joinable) {
-         msg.member.voiceChannel.join().then(msg.react('✅'));
-     }
-    }
-}
-})
-
-client.on('ready', () => {
-    client.channels.get("485230777832046593").join();
-    });
 
 
 
-client.on('message', message =>{
-  if(message.content.startsWith('2leave')){
-    const voiceChannel = message.member.voiceChannel
-    voiceChannel.disconnect();
-    message.channel.send("تم الخروج من الروم الصوتي")
-}}
+
+
 
 
 client.login(process.env.BOT_TOKEN);
