@@ -7,7 +7,7 @@ const prefix = '$'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`$help-m || Superme-m`,{type:'LISTENING'});
+client.user.setGame(`$help-m || Superme-m`,{type:'STREAMING'});
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
