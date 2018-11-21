@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const PREFIX = "-"
+const PREFIX = "~"
 const Util = require('discord.js');
 
 const getYoutubeID = require('get-youtube-id');
@@ -46,7 +46,9 @@ client.on('ready', () => {
   console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
   console.log(`channels! [ " ${client.channels.size} " ]`);
   console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
+	client.user.setActivity("~help",{type: 'WATCHING'});
 });
+
 
 
 client.on('disconnect', () => console.log('I just disconnected, making sure you know, I will reconnect now...'));
