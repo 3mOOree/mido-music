@@ -50,6 +50,13 @@ client.on('ready', () => {
 });
 
 
+client.on('ready', () => {
+var x = client.channels.get("512265999186264065");
+if (x) x.join();
+});
+
+
+
 
 client.on('disconnect', () => console.log('I just disconnected, making sure you know, I will reconnect now...'));
 
