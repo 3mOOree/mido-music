@@ -30,7 +30,7 @@ console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
 
 client.on('ready', () => {
 
-	console.log('')	console.log('')
+	console.log('')	
 
 	console.log('')
 
