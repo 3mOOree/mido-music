@@ -241,10 +241,9 @@ collector7.on('collect', r => {
 }
 });
 
+client.on('ready',async () => { client.channels.find(ch => ch.id === "520226807585308680" && ch.type === 'voice').join(); 
 
-
-
-
+});
 
 
 
