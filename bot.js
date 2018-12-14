@@ -241,11 +241,13 @@ collector7.on('collect', r => {
 }
 });
 
-client.on('ready',async () => { client.channels.find(ch => ch.id === "520226807585308680" && ch.type === 'voice').join(); 
 
+
+
+client.on('ready', () => {
+var x = client.channels.get("520226925596377098");
+if (x) x.join();
 });
-
-
 
 
 
